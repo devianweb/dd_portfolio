@@ -1,0 +1,12 @@
+.flex-container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.flex-item {
+    max-width: 540px;
+}
+

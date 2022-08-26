@@ -1,0 +1,58 @@
+$background: #0a192f;
+$big-heading: #ccd6f6;
+$small-heading: #8892b0;
+$body: #8892b0;
+$highlight: #64ffda;
+
+.list-container {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    width: 50px;
+    position: fixed;
+    bottom: 0px;
+    left: 10px;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.line {
+    height: 30px;
+    width: 2px;
+    background-color: $highlight;
+    margin: 5px 0px 0px 0px;
+}
+
+svg {
+    stroke: $big-heading;
+    fill: none;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    height: 20px;
+    width: 20px;
+    padding: 5px;
+    transition: all 1s
+}
+
+svg:hover {
+    height: 25px;
+    width: 25px;
+    stroke: $highlight;
+    padding: 2.5px;
+    transition: all 0.5s;
+}
+
+a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+

@@ -1,0 +1,46 @@
+$background: #0a192f;
+$big-heading: #ccd6f6;
+$small-heading: #8892b0;
+$body: #8892b0;
+$highlight: #64ffda;
+
+.flex-containers-container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding-left: 50px;
+    padding-right: 50px;
+    height: calc(100vh - 60px - 60px);
+}
+
+.flex-container {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+}
+
+a {
+    color: $highlight;
+    text-decoration: none;
+    transition: all 1s;
+}
+
+a:hover {
+    font-weight: 700;
+    transition: all 1s;
+}
+
+.profile-pic {
+    height: 250px;
+    border-radius: clamp(2px, 1080px, 10px);
+    float: right;
+    margin: 10px 0px 10px 20px;
+}
+
+.picture-text {
+    text-align: justify;
+}
+
+.text-container {
+    padding-bottom: 30px;
+}
