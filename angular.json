@@ -92,7 +92,11 @@
           }
         },
         "deploy": {
-          "builder": "angular-cli-ghpages:deploy"
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "baseHref": "/dd_portfolio/",
+            "cname": "duskwood.design"
+          }
         }
       }
     }
