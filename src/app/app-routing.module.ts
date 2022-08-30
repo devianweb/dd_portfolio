@@ -8,7 +8,7 @@ const routes: Routes = [
   { path: 'home', component: LandingPageComponent },
   { path: 'aboutme', component: AboutPageComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: '**', component: PageNotFoundComponent },
+  { path: '**', component: LandingPageComponent },
 ];
 
 @NgModule({
