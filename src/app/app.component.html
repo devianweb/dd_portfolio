@@ -1,5 +1,21 @@
-<app-nav-bar></app-nav-bar>
-<div class="flex-container">
-  <router-outlet></router-outlet>
+<div class="list-container">
+  <ul class="flex-container">
+    <li>
+      <a (click)="scroll('#home')">
+        <p class="highlight">01.</p>
+        <p>Home</p>
+      </a>
+    </li>
+    <li>
+      <a (click)="scroll('#about')">
+        <p class="highlight">02.</p>
+        <p>About</p>
+      </a>
+    </li>
+  </ul>
+</div>
+<div class="section-container">
+  <app-landing-page id="home" class="section-item"></app-landing-page>
+  <app-about-page id="about" class="section-item"></app-about-page>
 </div>
 <app-social-list></app-social-list>

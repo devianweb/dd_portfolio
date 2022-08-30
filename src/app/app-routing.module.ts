@@ -6,13 +6,12 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 
 const routes: Routes = [
   { path: 'home', component: LandingPageComponent },
-  { path: 'aboutme', component: AboutPageComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: '**', component: LandingPageComponent },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { anchorScrolling: 'enabled' })],
   exports: [RouterModule],
 })
 export class AppRoutingModule {}

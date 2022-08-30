@@ -8,6 +8,10 @@ import { AboutPageComponent } from './about-page/about-page.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { SocialListComponent } from './social-list/social-list.component';
+import { Router, RouterEvent, Scroll } from '@angular/router';
+import { ViewportScroller } from '@angular/common';
+import { filter } from 'rxjs/operators';
+import { EasingLogic, NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
 
 @NgModule({
   declarations: [
@@ -18,8 +22,10 @@ import { SocialListComponent } from './social-list/social-list.component';
     NavBarComponent,
     SocialListComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, NgxPageScrollCoreModule],
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule {
+  constructor() {}
+}

@@ -1,9 +1,10 @@
 .flex-container {
     display: flex;
-    flex: 1;
     flex-direction: column;
-    padding-left: 50px;
-    padding-right: 50px;
+    justify-content: center;
+    flex: 1;
+    
+    min-height: 100vh;
 }
 
 .flex-item {
