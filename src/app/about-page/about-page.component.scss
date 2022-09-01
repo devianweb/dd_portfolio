@@ -8,15 +8,13 @@ $highlight: #64ffda;
     display: flex;
     flex: 1;
     flex-direction: column;
-    height: 100vh;
     justify-content: center;
 }
 
-
-.flex-container {
+.flex-containers-item {
     display: flex;
-    flex: 1;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 a {
@@ -31,15 +29,69 @@ a:hover {
 }
 
 .profile-pic {
-    height: 250px;
-    border-radius: clamp(2px, 1080px, 10px);
-    float: right;
-    margin: 10px 0px 10px 20px;
+    height: 350px;
+    border-radius: 5px;
+    margin-left: auto;
+}
+
+.sports-pics-item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px
+}
+
+.sports-pics {
+    max-width: 500px;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    filter: grayscale(100%);
+    transition: all 1s;
+}
+
+.sports-pics:hover {
+    filter: none;
+}
+
+.boogaloo {
+    margin: 0 auto 0 auto;
+    height: 100%;
+}
+
+.boogaloo>p{
+    margin: 0;
+    text-align: center;
+    font-size: 12px;
+}
+
+.sports-text {
+    text-align: justify;
 }
 
 .picture-text {
     text-align: justify;
+    max-width: calc(100vw - 150px - 150px - 300px );
 }
+
+@media (max-width: 1080px) {
+    .flex-containers-item {
+        display: flex;
+        flex-direction: column;
+
+    }
+    
+    .picture-text {
+        max-width: none;
+    }
+
+    .profile-pic {
+        margin: 0 auto;
+
+    }
+}
+
+
 
 .text-container {
     padding-bottom: 30px;

@@ -21,6 +21,7 @@ export class AppComponent {
       document: this.document,
       scrollTarget: id,
       easingLogic: this.defaultEasing,
+      scrollOffset: 50,
     });
   }
 
