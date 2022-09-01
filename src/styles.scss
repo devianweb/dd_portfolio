@@ -8,6 +8,16 @@ $small-heading: #8892b0;
 $body: #8892b0;
 $highlight: #64ffda;
 
+::-webkit-scrollbar {
+    width: 10px;
+    background:none;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 15px;
+    background:rgb(52, 52, 52)
+} 
+
 p {
     color: $body;
     font-family: 'Roboto Mono';
