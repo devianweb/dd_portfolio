@@ -1,21 +1,15 @@
-<div class="list-container">
-  <ul class="flex-container">
+<nav class="nav-bar" aria-label="Sections">
+  <ul>
     <li>
-      <a (click)="scroll('#home')">
-        <p class="highlight">01.</p>
-        <p>Home</p>
-      </a>
+      <a href="#home"><span class="highlight">01.</span> Home</a>
     </li>
     <li>
-      <a (click)="scroll('#about')">
-        <p class="highlight">02.</p>
-        <p>About</p>
-      </a>
+      <a href="#projects"><span class="highlight">02.</span> Projects</a>
     </li>
   </ul>
-</div>
-<div class="section-container">
+</nav>
+<main class="section-container">
   <app-landing-page id="home" class="section-item"></app-landing-page>
-  <app-about-page id="about" class="section-item"></app-about-page>
-</div>
+  <app-projects id="projects" class="section-item"></app-projects>
+</main>
 <app-social-list></app-social-list>

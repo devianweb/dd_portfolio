@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- SkirmishLab tab icon: an original low-poly d6 in the lobby's gold on dark slate. -->
+  <rect width="64" height="64" rx="12" fill="#1c2733"/>
+  <polygon points="32,8 54,20 32,32 10,20" fill="#ffe082"/>
+  <polygon points="10,20 32,32 32,58 10,46" fill="#ffc107"/>
+  <polygon points="32,32 54,20 54,46 32,58" fill="#ff8f00"/>
+  <g fill="#1c2733">
+    <ellipse cx="32" cy="20" rx="4.5" ry="2.6"/>
+    <circle cx="16.5" cy="30" r="2.8"/>
+    <circle cx="25.5" cy="48" r="2.8"/>
+    <circle cx="38.5" cy="48" r="2.8"/>
+    <circle cx="43" cy="39" r="2.8"/>
+    <circle cx="47.5" cy="30" r="2.8"/>
+  </g>
+</svg>
