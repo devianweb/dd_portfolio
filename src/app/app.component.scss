@@ -5,17 +5,37 @@
   right: 0;
   z-index: 10;
   height: var(--nav-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px 0 20px;
   background-color: var(--background);
 
   ul {
     display: flex;
-    justify-content: flex-end;
     align-items: center;
     gap: 24px;
-    height: 100%;
-    margin: 0 30px 0 0;
+    margin: 0;
     padding: 0;
     list-style: none;
+  }
+
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--big-heading);
+    font-family: 'Cinzel', serif;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  @media (max-width: 600px) {
+    .brand-name {
+      display: none;
+    }
   }
 
   a {

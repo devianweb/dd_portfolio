@@ -5,6 +5,4 @@ import { Component } from '@angular/core';
   templateUrl: './landing-page.component.html',
   styleUrls: ['./landing-page.component.scss'],
 })
-export class LandingPageComponent {
-  readonly tools = ['Java', 'TypeScript', 'Godot', 'Claude', 'Antigravity'];
-}
+export class LandingPageComponent {}
