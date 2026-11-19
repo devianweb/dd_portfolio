@@ -1,0 +1,36 @@
+<section class="projects" aria-labelledby="projects-heading">
+  <p class="highlight">Things I've built</p>
+  <h2 id="projects-heading" class="section-heading">Projects</h2>
+  <ul class="card-grid">
+    <li *ngFor="let project of projects">
+      <a
+        class="card"
+        [href]="project.url"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          class="card-image"
+          [src]="project.image"
+          [alt]="project.imageAlt"
+          loading="lazy"
+          width="1280"
+          height="720"
+        />
+        <div class="card-body">
+          <h3 class="card-title">
+            <img *ngIf="project.logo" class="card-logo" [src]="project.logo" alt="" />
+            {{ project.name }}
+            <span class="external" aria-hidden="true">↗</span>
+            <span class="visually-hidden">(opens in a new tab)</span>
+          </h3>
+          <p class="card-description">{{ project.description }}</p>
+          <p *ngIf="project.note" class="card-note">{{ project.note }}</p>
+          <ul class="tag-list" [attr.aria-label]="project.name + ' tech'">
+            <li *ngFor="let tag of project.tags">{{ tag }}</li>
+          </ul>
+        </div>
+      </a>
+    </li>
+  </ul>
+</section>
